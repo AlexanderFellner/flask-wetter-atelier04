@@ -4,7 +4,6 @@ import pandas as pd
 import json
 import matplotlib.pyplot as plt
 import seaborn as sb
-import mpld3
 
 app = Flask(__name__)
 
