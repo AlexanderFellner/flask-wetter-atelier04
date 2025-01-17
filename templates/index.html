@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style type="text/css">
+        #wetterform
+        {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        flex-direction:column;
+        justify-content: center
+
+        }
+        #startzeit
+        {
+          margin-bottom: 20px;
+          padding-bottom: 3px;
+
+        }
+        #endzeit
+        {
+          margin-bottom: 20px;
+          padding-bottom: 3px;
+        }
+        #wetterdatenbutton
+        {
+        padding-bottom: 3px;
+        background-color: #80aaff;
+        border-radius: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+<form method="post" action="/wetter">
+
+    <div id="wetterform">
+        <input id="startzeit" type="date" name="startzeit" />
+        <input id="endzeit" type="date" name="endzeit" />
+        <button id="wetterdatenbutton" type="submit">Hole Wetterdaten</button>
+
+    </div>
+
+
+</form>
+</body>
+</html>
